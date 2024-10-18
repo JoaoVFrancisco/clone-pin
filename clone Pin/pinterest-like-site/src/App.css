@@ -1,0 +1,40 @@
+/* Estilo do Header (para todas as páginas) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da logo */
+.logo img {
+  height: 50px;
+}
+
+/* Estilo do menu de navegação */
+.nav {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+/* Estilo do conteúdo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+

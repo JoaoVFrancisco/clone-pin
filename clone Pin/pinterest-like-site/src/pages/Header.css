@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .categories a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .categories a:hover {
+    text-decoration: underline;
+  }
+  
