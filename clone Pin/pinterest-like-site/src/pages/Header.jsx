@@ -2,12 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'; // Certifique-se de que o estilo está correto
 
-function Header() {
+function Header({ setCurrentPage }) {
+  const handleLogoClick = () => {
+    setCurrentPage(1); // Redefine para a primeira página quando a logo é clicada
+  };
+
   return (
     <header className="header">
       <div className="logo">
         {/* Link que redireciona para a página inicial e envolve a logo */}
-        <Link to="/">
+        <Link to="/" onClick={handleLogoClick}>
           <img src="/Mario.jpg" alt="Logo do site" />
         </Link>
       </div>
