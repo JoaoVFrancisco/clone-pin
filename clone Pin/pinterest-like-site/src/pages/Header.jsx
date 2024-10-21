@@ -6,14 +6,16 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        {/* Logo que redireciona para a página inicial */}
-        <Link to="/">Logo</Link>
+        {/* Link que redireciona para a página inicial e envolve a logo */}
+        <Link to="/">
+          <img src="/Mario.jpg" alt="Logo do site" />
+        </Link>
       </div>
       <nav className="categories">
         <Link to="/">Home</Link>
-        <Link to="/category/1">Natureza</Link>
-        <Link to="/category/2">Tecnologia</Link>
-        <Link to="/category/3">Animais</Link>
+        <Link to="/category/Natureza">Musica</Link>
+        <Link to="/category/Tecnologia">Meme</Link>
+        <Link to="/category/Animais">Bandas</Link>
       </nav>
     </header>
   );

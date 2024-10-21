@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import images from '../data/images';
+import styles from './ImageDetail.module.css'; // Importar o CSS module
 
 function ImageDetail() {
   const { imageId } = useParams();
@@ -11,10 +12,12 @@ function ImageDetail() {
   }
 
   return (
-    <div>
-      <h1>{image.title}</h1>
-      <img src={image.src} alt={image.title} />
-      <p>{image.description}</p> {/* Exibindo a descrição da imagem */}
+    <div className={styles.container}>
+      <img className={styles.image} src={image.src} alt={image.title} /> {/* Imagem à esquerda */}
+      <div className={styles.textContainer}> {/* Texto à direita */}
+        <h1 className={styles.title}>{image.title}</h1>
+        <p className={styles.description}>{image.description}</p> {/* Exibindo a descrição da imagem */}
+      </div>
     </div>
   );
 }
