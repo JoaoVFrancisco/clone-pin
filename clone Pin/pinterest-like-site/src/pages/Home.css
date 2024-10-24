@@ -52,14 +52,13 @@
     font-size: 16px;
   }
   
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  
-  .gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
+  /* Estilo da imagem na galeria */
+.gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}

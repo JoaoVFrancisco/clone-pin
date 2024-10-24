@@ -17,9 +17,9 @@ function Header({ setCurrentPage }) {
       </div>
       <nav className="categories">
         <Link to="/">Home</Link>
-        <Link to="/category/Natureza">Musica</Link>
+        <Link to="/category/Natureza">Aleatorios</Link>
         <Link to="/category/Tecnologia">Meme</Link>
-        <Link to="/category/Animais">Bandas</Link>
+        <Link to="/category/Animais">Explorar</Link>
       </nav>
     </header>
   );
